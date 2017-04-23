@@ -3,9 +3,11 @@ body {
 }
 
 .navbar-brand {
-    
+    font-family:monospace;
+    font-size: 2em;
     
 }
+
 
 #firstheader {
     font-size: 2ems;
@@ -42,17 +44,24 @@ body {
     
 }
 
+.excerpt,
 p,
 .servicetext {
     color: #ccc;
 }
 
-
+#kamballogo {
+    width: 200px;
+    border-radius: 100%;
+    
+}
 
 .jumbi {
 
     background: url(bg2.jpg) no-repeat center;
     -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     margin: 0 -2.5%;
     padding: 10% 0 20% 0;
