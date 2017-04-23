@@ -1,21 +1,70 @@
 body {
-    background-color: #555;
+    background-color: #333;
+}
+
+.navbar-brand {
+    
     
 }
 
-.jumbotron {
+#firstheader {
+    font-size: 2ems;
+    font-weight: bold;
+    text-shadow: 23px 23px 23px ;
+}
+.secondheader {
+    font-size: 40px;
+    font-family: serif;
+    color: #ccc;
     
-background: url(bg1.jpg) no-repeat center;
+}
+
+.mid-text {
+    color: #ccc;
+    font-size: 1.em;
+    font-family:serif;
+}
+
+
+.mid-fixer {
+    margin: 20px 0 2px 0;
+    color: #ccc;
+    padding: 5%
+    
+}
+
+
+.service-icon {
+    width: 200px;
+    height: 200px !important;
+    border-radius: 100%;
+    
+    
+}
+
+p,
+.servicetext {
+    color: #ccc;
+}
+
+
+
+.jumbi {
+
+    background: url(bg2.jpg) no-repeat center;
     -webkit-background-size: cover;
-    background-size: ;
+    background-size: cover;
+    margin: 0 -2.5%;
+    padding: 10% 0 20% 0;
+    background-attachment: fixed;
 
 }
 
-img {
+img  {
     width: 100%;
-    height: 400px !important;
-    
+    height: 500px !important;
+
 }
 
-    
-    
+
+
