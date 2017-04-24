@@ -11,6 +11,15 @@ h2 {
 
     color: aliceblue;
 }
+ i {
+    
+    padding: 30px;
+    border-radius: 100%;
+    background: #1c34b2;
+    color: #eee;
+    font-size: 1.5em !important;
+    
+}
 
 h4 {
     
@@ -18,13 +27,14 @@ h4 {
 }
 
 nav {
-    margin-bottom: 20px;    
+    margin-bottom: 20px;
+    display:flex;
 }
-.navbar-brand {
 
+.navbar-brand {
     font-family:monospace;
     font-size: 2em;
-
+    position: 
 }
 /*Front*/
 #home {
@@ -58,7 +68,7 @@ nav {
 
 }
 
-#project  h2,
+#projects  h2,
 #projects {
 
     background:#ddd;
@@ -205,6 +215,7 @@ p,
 
 #footer {
     padding: 100px;
+    background: url(image/bg1.jpg);
 }
 
 .content {
