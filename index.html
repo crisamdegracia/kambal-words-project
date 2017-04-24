@@ -1,3 +1,62 @@
+<!--
+
+<?php
+$errorString = ""; $successMessage ="";
+
+if($_POST){
+
+
+if(!$_POST["email"] == ""){
+$errorString."Email field required from PHP<br>";
+}
+
+if(!$_POST["subject"] == ""){
+$errorString."Email field required from PHP<br>";
+}
+
+if(!$_POST["textarea"] == ""){
+$errorString."Email field required From PHP<br>";
+}
+
+if($_POST["email"] && filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) === false){
+
+$errorString."Email address is invalid from PHP<br>";
+
+}
+
+if ($errorString !== ""){
+
+$errorString = '<div class="alert alert-danger " role="alert"><p><strong>'.errorString.'</strong></p></div>';
+
+}
+
+else {
+$mailTo = "crisamdegracia@gmail.com";
+$subject = $_POST['subject'];
+$content = $_POST['textarea'];
+$headers = $_POST['email'];
+}
+
+if (mail($mailTo,$subject,$content,$headers)){
+
+$successMessage =  '<div class="alert alert-success" role="alert"><p><strong>Email has been sent successfully! PHP</strong></p></div>';
+
+}
+
+else {
+
+$errorString = '<div class="alert alert-danger " role="alert"><p><strong>Email has been sent successfully! PHP </strong></p></div>';
+
+}
+}
+?>
+
+
+
+
+-->
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -19,41 +78,41 @@
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand ml-5" href="#">Kambal works</a>
+            <a class="navbar-brand ml-5" href="#home">Kambal works</a>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav offset-8">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Contact Us <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#contact">Contact us <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Services <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#services">Services <span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
 
             </div>
         </nav><!--NAV-->
 
-        <section id="jumbi">
+        <section id="home">
 
             <div class="container-fluid text-center">
 
                 <div class="jumbi text-center" >
 
-                    <h1 id="firstheader">Kambal Glass Alluminum  and Iron works </h1> 
+                    <h1 id="firstheader">Kambal Glass Aluminum  and Iron Works. </h1> 
                     <img src="/kamballogo.jpg"  id="kamballogo" alt="skull-steel">
                     <hr class="text-lead">
-                    <button class="btn btn-success btn-lg contact-btn">Contact Us</button>
+                    <button class="btn btn-success btn-lg contact-btn">Contact us</button>
                 </div>
             </div>
         </section> <!--Front Page-->
 
 
         <!--------------------CAROUSEL------------------------------------------------->
-        <section id="carosel">
+        <section id="projects">
             <div class="text-center mid-fixer">
                 <h2 class="secondheader">Our Projects</h2>
                 <h4 class="text-lead mid-text"> look at our previous project models gallery</h4>
@@ -216,23 +275,17 @@
                 <div class="row text-center">
 
                     <div class="col-lg-4 col-md-4 col-sm-4">
-                        <img class="img-thumbnail service-icon" src="icon-1.png" alt="hammer">
+                        <img class="img-thumbnail service-icon" src="image/icon-1.png" alt="hammer">
                         <p class="servicetext text-center x">Repairs</p>
-                        <p class="excerpt x">Esse admodum in incididunt qui ex o enim quem quid. Esse ullamco quo 
-                            fidelissimae ab iudicem magna eiusmod quamquam. Se id duis noster nisi e quo se 
-                            praetermissum ab te iis cohaerescant, ut est esse fore fugiat. Ne quis 
-                            expetendis graviterque hic commodo quis doctrina, ita quis multos magna 
-                            quibusdam, incurreret se legam ubi et velit aute ab nostrud, cernantur eram se 
-                            laborum exercitation a ex quid ullamco quamquam si a quid sunt legam occaecat. 
-                            Ubi aliqua quamquam doctrina qui possumus ea excepteur. Tamen doctrina mentitum, 
-                            dolore ex se tamen mandaremus de ut eram eiusmod litteris est summis nescius si 
-                            exquisitaque nam o minim cohaerescant, nisi officia arbitror, id illum fabulas 
-                            quamquam, possumus noster te cernantur domesticarum. Aut fore efflorescere.</p>  
+                        <p class="excerpt x">
+                            We repair any kinds of stuffs involving Glass, Aluminums and Metals. See above example of what we can do.
+
+                        </p>  
                     </div>
 
 
                     <div class="col-lg-4 col-md-4 col-sm-4">
-                        <img class="img-thumbnail service-icon" src="icon-2.png" alt="hammer">
+                        <img class="img-thumbnail service-icon" src="image/icon-2.png" alt="hammer">
                         <p class="servicetext text-center x">Install</p>  
                         <p class="excerpt x">Varias coniunctione ullamco legam aliquip, iis ut consectetur est ea varias 
                             consequat adipisicing, quamquam ab dolor, fore iis hic fugiat nostrud ubi ne 
@@ -252,7 +305,7 @@
 
 
                     <div class="col-lg-4 col-md-4 col-sm-4">
-                        <img class="img-thumbnail service-icon" src="icon-3.png" alt="hammer">
+                        <img class="img-thumbnail service-icon" src="image/icon-3.png" alt="hammer">
                         <p class="servicetext text-center x">Build</p>     
                         <p class="excerpt x" >Ad nam aute cernantur, mandaremus lorem sunt ex noster, o multos excepteur in 
                             mentitum quorum vidisse, do mandaremus de ullamco ad aut qui minim eiusmod, ad 
@@ -289,14 +342,14 @@
                 <div class="row">
                     <div class="text-center col-lg-6 offset-lg-3">
                         <p class="excerpt"  id="about-excerpt">
-                            We are an independently owned a workshop that specializes in servicing, repairing and restoring a wide variety of glass, aluminum, steel and iron models. We ensure our work meets the highest industry standards.
+                            We are an independently owned a workshop that specializes in servicing, repairing and restoring a wide variety of glass, aluminum and iron models. We ensure our work meets the highest industry standards.
 
 
                             <br>
                             <br>
 
 
-                            Our goal is to be an provider service leader. We’ll go the extra mile to earn the trust of our clients, and believe in providing the highest level of service in all areas of our expertise. Our craft is our pride, so leave your doors and windows  with pros who really care.</p>
+                            Our goal is to be a service provider leader. We’ll go extra mile to earn the trust of our clients, and believe in providing the highest level of service in all areas of our expertise. Our craft is our pride, so leave your broken doors and windows  with pros who really care.</p>
 
                     </div><!--text center COl-->
                 </div><!--row-->
@@ -311,79 +364,49 @@
             <div class="container">
 
                 <div class="text-center mid-fixer">
-                    <h2 class="secondheader" id="text-about" style="color:#FFF039;">What our customer tells about us</h2>
+                    <h2 class="secondheader" id="text-about" style="color:#FFF039;">What our customer tells about us?</h2>
                 </div>
                 <div class="row">
 
-                    <div class="col-lg-12">
-                        <h2> Mr. Gomez </h2> <p><span class="spl">&quot; </span> 
-                        Ne tamen amet in nostrud a se culpa tamen quae expetendis, vidisse qui fore, 
-                        nostrud tamen appellat de nam quem consectetur, minim ingeniis est relinqueret, 
-                        qui doctrina e cernantur, irure senserit e excepteur. Hic culpa aliquip, irure 
-                        commodo a sunt enim, offendit qui aute incididunt, nisi ingeniis quo 
-                        cohaerescant. Nisi eiusmod ne quis ipsum, do se esse minim aute ab possumus ad 
-                        dolor, quorum probant laboris, hic laborum praetermissum, pariatur est laboris, 
-                        ex multos ea minim, nescius tamen malis proident velit. Sed possumus 
-                        concursionibus ita arbitror labore sint offendit nisi do ex deserunt 
-                        relinqueret, iudicem sed fugiat. Qui quorum tamen malis singulis, ut nisi minim 
-                        si offendit, voluptate elit pariatur ingeniis, sint comprehenderit laborum dolor 
-                        fabulas, fugiat non nostrud, hic fabulas imitarentur, ne quo veniam summis amet 
-                        ita e pariatur ita incurreret. Ut nulla amet cillum quamquam nam litteris sint 
-                        quae senserit cillum, aute nostrud imitarentur, ipsum eu tempor in veniam. Ubi 
-                        hic tractavissent, ea nisi de quorum.
+                    <div class="col-lg-4">
+                        <h2 class="comment-header"> Mr. Gomez </h2>
+                        <hr class="linya">
+                        <p class="comments"> <span class="spl">&quot;</span> 
+
+                            Mahusay ang pinagawa kong grills sa bintana, napaka profesional nila gumawa. Mura at napaka bilis pa.
+                            Hindi ako nag kamali sa pag hire sakanila. Maraming salamat Kambal Works!
+                        </p>
+                    </div><!--col-->
+
+
+
+                    <div class="col-lg-4">
+                        <h2 class="comment-header">Ms. Jenny </h2>
+                        <hr class="linya">
+                        <p class="comments">   
+                            <span class="spl">&quot;</span> 
+                            Nag pagawa ako ng bahay sa Kambal Works grabe hindi ko ineexpect na beyond expectations pala
+                            ang kalalabasan, So I recommend Kambal Works para sa mga ibat ibang pangangailangan nio like gate, wall painting and etc.
+                            fast and beautiful finished product!
+
+                        </p>
+                    </div><!--col-->
+
+
+
+                    <div class="col-lg-4">
+                        <h2 class="comment-header">Manong Oka</h2>
+                        <hr class="linya">
+                        <p class="comments"><span class="spl">&quot;</span> 
+                            I recommend this briliant individuals who works with passion and excellence. 
+                            pina-renovate ko ung motor kong luma para sa bayaw ko, and guess what ? hind ko nakilala ung 
+                            ipinresent nilang motor akala ko nag bibiro lang, sobrang ganda kasi hindi mo aakalaing from luma sya.
+                            definitely a worth hiring inviduals.
                         </p>
                     </div><!--col-->
 
                 </div><!--row-->
 
-                <div class="row">
-
-                    <div class="col-lg-12">
-                        <h2>Ms. Jenny </h2>
-                        <p>  <span class="spl">&quot; </span> A veniam imitarentur ubi ubi culpa dolor illum deserunt qui arbitror noster quem 
-                            id multos, expetendis malis litteris. Tamen te arbitror id culpa, magna si qui 
-                            cillum voluptate, se nisi illustriora non ex quis irure veniam quamquam. 
-                            Mandaremus dolor iudicem excepteur, anim quamquam est distinguantur. Magna te 
-                            incididunt ut mentitum quis quis de ipsum nam quibusdam eram ne officia 
-                            praetermissum, deserunt dolore duis senserit illum. Esse in e aute eiusmod. 
-                            Arbitror an aute, nam nulla te fore, quo irure esse et iudicem est eu labore 
-                            arbitror. Elit nostrud se minim cillum.</p>
-                    </div><!--col-->
-
-                </div><!--row-->
-
-                <div class="row">
-
-                    <div class="col-lg-12">
-                        <h2>Manong Oka</h2>
-                        <p><span class="spl">&quot; </span> 
-                            Eiusmod tamen aut mandaremus tractavissent, ubi sed sint sunt minim ubi 
-                            voluptate te quamquam te duis fabulas eu cupidatat, pariatur an varias mentitum, 
-                            pariatur ipsum ad voluptate exercitation si litteris fore duis possumus quem, 
-                            labore coniunctione quibusdam dolore pariatur. Magna commodo ex legam summis nam 
-                            qui ea anim possumus. Do nulla quae eu deserunt ne an ubi reprehenderit, aut 
-                            summis quem elit senserit ubi ex o voluptatibus, quem iudicem in singulis quo 
-                            quibusdam anim elit quamquam enim et do iis quorum senserit, proident varias 
-                            sint incurreret cillum. Legam litteris ab fugiat tamen, mentitum quo elit 
-                            vidisse. Ex magna dolore e voluptate e expetendis te eiusmod, minim quamquam ubi 
-                            distinguantur in quis mandaremus in culpa dolor, litteris minim occaecat, 
-                            iudicem tractavissent ad ingeniis, ad nescius distinguantur an quae si quo duis 
-                            mandaremus. Qui elit philosophari, ubi magna quorum quo laborum, admodum nam 
-                            illum incurreret ad excepteur velit consequat. Eram consequat ex illustriora, 
-                            laboris aute voluptate proident, cupidatat ubi elit incididunt, culpa incididunt 
-                            offendit.
-                        </p>
-                    </div><!--col-->
-
-                </div><!--row-->
-
-                <div class="row">
-
-                    <div class="col-lg-12">
-
-                    </div>
-
-                </div>
             </div>
         </section><!--TESTIMONIALS-->
 
@@ -399,7 +422,7 @@
         <!--FORMS-->
 
         <section id="forms">
-           
+
             <div class="container">
 
                 <form action="">
@@ -428,7 +451,27 @@
         <!--FOOTER-->
         <footer id="footer">
             <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4">
+                        <h4>Contact Us!</h4>
+                        <p>Mobile no: 0915-280-4447</p>
+                        <p>Address: Section 14a Phase 7 Brookeside Lane Gen. Trias Cavite </p>
+                        <p>Email: songcuyadave64@gmail.com</p>
+                    </div>
 
+                    <div class="col-lg-4 col-md-4">
+                        <h4>Like us in Facebook!</h4>
+                        
+
+                    </div>
+
+                    <div class="col-lg-4 col-md-4">
+                        <h4>Contact Us!</h4>
+                        <p>Mobile no: 0915-280-4447</p>
+                        <p>Address: Section 14a Phase 7 Brookeside Lane Gen. Trias Cavite </p>
+                        <p>Email: songcuyadave64@gmail.com</p>
+                    </div>
+                </div><!--row-->
             </div>
         </footer>
 

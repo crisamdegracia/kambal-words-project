@@ -12,6 +12,10 @@ h2 {
     color: aliceblue;
 }
 
+h4 {
+    
+    color: antiquewhite;
+}
 
 nav {
     margin-bottom: 20px;    
@@ -23,9 +27,9 @@ nav {
 
 }
 /*Front*/
-.jumbi {
+#home {
 
-    background: url(bg2.jpg) no-repeat center;
+    background: url(image/bg2.jpg) no-repeat center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -37,7 +41,7 @@ nav {
 
 
 #kamballogo {
-    width: 20%;
+    width: 230px;
     height: 30% !important;
     border-radius: 100%;
 }
@@ -54,8 +58,8 @@ nav {
 
 }
 
-#carosel  h2,
-#carosel {
+#project  h2,
+#projects {
 
     background:#ddd;
     background-size: cover;
@@ -105,7 +109,7 @@ p,
 
 #services {
 
-    background: url(bg4.jpg)no-repeat center;
+    background: url(image/bg4.jpg)no-repeat center;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -156,12 +160,37 @@ p,
 
 }
 
+
+/*span from Testimonials section*/
 .spl {
-    font-size: 100px;
+    font-size: 80px;
+    margin: 0 0px;
+    font-style: italic;
+    animation-delay: 2000;
+    position: relative;
+    top: 30px;
+    z-index:1;
+    letter-spacing: 2px;
+    line-height: 2px;
+}
+
+.comments {
+    position: relative;
+    font-family:cursive, Helvetic, sans-serif;
+    z-index: 5;
+}
+
+.comment-header {
+    
+    
+}
+
+.linya { 
+    border: 1px solid #FFF039;
 }
 
 #paralax {
-    background: url(happy-people-1200.gif)no-repeat center;
+    background: url(image/happy-people-1200.gif)no-repeat center;
     background-attachment: fixed;
     background-size: cover;
     padding: 200px 0 200px 0;
@@ -169,19 +198,27 @@ p,
 
 
 #forms {
-    
-    background-color: #fff;
+
+    background-color: #ddd;
     padding: 5%;
 }
 
+#footer {
+    padding: 100px;
+}
+
+.content {
+    
+}
+
 @media only screen and (min-width: 5508px) and (max-width: 768px){
-    
-    
+
+
     .img-fluid {
-        
-    width:% !important;
+
+        width:% !important;
     }
-    
+
     .btn {
         color: red !important;
     }
