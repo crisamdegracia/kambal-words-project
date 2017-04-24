@@ -14,19 +14,38 @@ h2 {
 
 
 nav {
-margin-bottom: 20px;    
+    margin-bottom: 20px;    
 }
 .navbar-brand {
+
     font-family:monospace;
     font-size: 2em;
 
 }
+/*Front*/
+.jumbi {
 
+    background: url(bg2.jpg) no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 50px -20px 0;
+    padding: 8% 2% 10% 0;
+    background-attachment: fixed;
+}
+
+
+#kamballogo {
+    width: 20%;
+    height: 30% !important;
+    border-radius: 100%;
+}
 
 #firstheader {
     font-size: 2ems;
     font-weight: bold;
-    text-shadow: 23px 23px 23px ;
+    text-shadow: 23px 23px 23px;
 }
 .secondheader {
     font-size: 50px;
@@ -38,15 +57,16 @@ margin-bottom: 20px;
 #carosel  h2,
 #carosel {
 
-    background-color: #222;
+    background:#ddd;
+    background-size: cover;
     margin: -20px 0;
-    color: #eee;
+    color: #111;
     padding: 20px;
 }
 
 
 .mid-text {
-    color: #ccc;
+    color: #333;
     font-size: 1.8em;
     font-family:serif;
 }
@@ -64,8 +84,6 @@ margin-bottom: 20px;
     width: 200px;
     height: 200px !important;
     border-radius: 100%;
-
-
 }
 
 .excerpt,
@@ -75,31 +93,16 @@ p,
 
 }
 
-#kamballogo {
-    width: 25%;
-    height: 25% !important;
-    border-radius: 100%;
-    opacity: 0.7;
 
+
+.d-block {
+    width: 720x;
+    height: 450px !important;
+    text-align: center;
+    margin: 0 auto;
 }
 
-.jumbi {
 
-    background: url(bg2.jpg) no-repeat center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    margin: 50px -5% 0;
-    padding: 8% 0 60px 0;
-    background-attachment: fixed;
-}
-
-img  {
-    width: 100%;
-    height: 500px !important;
-
-}
 #services {
 
     background: url(bg4.jpg)no-repeat center;
@@ -116,13 +119,22 @@ img  {
 
 /*excerpts and some of p's class */
 .x {
-
     font-size: 1.2em;
 }
+
+.x:nth-child(2){
+    color: #fff;
+    font-weight: bolder;
+    font-size: 1.9em
+
+}
+
 #about {
     background: #ddd;
     margin: -20px 0;
 }
+
+/*section header*/
 #text-about {
     color: #111;
 
@@ -152,10 +164,26 @@ img  {
     background: url(happy-people-1200.gif)no-repeat center;
     background-attachment: fixed;
     background-size: cover;
-    padding: 10%;
+    padding: 200px 0 200px 0;
 }
 
-@media screen and(min-width:699px){
 
-  
+#forms {
+    
+    background-color: #fff;
+    padding: 5%;
+}
+
+@media only screen and (min-width: 5508px) and (max-width: 768px){
+    
+    
+    .img-fluid {
+        
+    width:% !important;
+    }
+    
+    .btn {
+        color: red !important;
+    }
+
 }
