@@ -1,11 +1,25 @@
 body {
     background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
 }
 
+h2 {
+
+    color: aliceblue;
+}
+
+
+nav {
+margin-bottom: 20px;    
+}
 .navbar-brand {
     font-family:monospace;
     font-size: 2em;
-    
+
 }
 
 
@@ -15,15 +29,25 @@ body {
     text-shadow: 23px 23px 23px ;
 }
 .secondheader {
-    font-size: 40px;
+    font-size: 50px;
     font-family: serif;
     color: #ccc;
-    
+
 }
+
+#carosel  h2,
+#carosel {
+
+    background-color: #222;
+    margin: -20px 0;
+    color: #eee;
+    padding: 20px;
+}
+
 
 .mid-text {
     color: #ccc;
-    font-size: 1.em;
+    font-size: 1.8em;
     font-family:serif;
 }
 
@@ -32,7 +56,7 @@ body {
     margin: 20px 0 2px 0;
     color: #ccc;
     padding: 5%
-    
+
 }
 
 
@@ -40,20 +64,23 @@ body {
     width: 200px;
     height: 200px !important;
     border-radius: 100%;
-    
-    
+
+
 }
 
 .excerpt,
 p,
 .servicetext {
-    color: #ccc;
+    color: #ddd;
+
 }
 
 #kamballogo {
-    width: 200px;
+    width: 25%;
+    height: 25% !important;
     border-radius: 100%;
-    
+    opacity: 0.7;
+
 }
 
 .jumbi {
@@ -63,10 +90,9 @@ p,
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    margin: 0 -2.5%;
-    padding: 10% 0 20% 0;
+    margin: 0 -5%;
+    padding: 8% 0 60px 0;
     background-attachment: fixed;
-
 }
 
 img  {
@@ -74,6 +100,62 @@ img  {
     height: 500px !important;
 
 }
+#services {
+
+    background: url(bg4.jpg)no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.text-service {
+    color: #ddd;
+    font-weight: bold;
+    font-size: 5em;
+}
 
 
+/*excerpts and some of p's class */
+.x {
 
+    font-size: 1.2em;
+}
+#about {
+    background: #ddd;
+    margin: -20px 0;
+}
+#text-about {
+    color: #111;
+
+}
+#about p {
+    background: #ccc;
+    padding: 0 30px;
+    color: #222 !important;
+}
+
+
+#about-excerpt {
+
+    padding: 40px 20px  !important;
+    border-radius: 20px;
+    font-family: Fairplex;
+    font-size: 1.4em;
+
+
+}
+
+.spl {
+    font-size: 100px;
+}
+
+#paralax {
+    background: url(happy-people-1200.gif)no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 10%;
+}
+
+@media screen and(min-width:699px){
+
+  
+}
