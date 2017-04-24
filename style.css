@@ -5,6 +5,8 @@ body {
     -moz-font-smoothing: antialiased;
     -o-font-smoothing: antialiased;
     text-rendering: optimizelegibility;
+    position: relative;
+    overflow-y: scroll;
 }
 
 h2 {
@@ -44,7 +46,7 @@ nav {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    margin: 50px -20px 0;
+    margin: 10px 0 -20px 0;
     padding: 8% 2% 10% 0;
     background-attachment: fixed;
 }
@@ -191,10 +193,11 @@ p,
 }
 
 .comment-header {
-    
+    font-family:serif;
     
 }
 
+/*hr class*/
 .linya { 
     border: 1px solid #FFF039;
 }
@@ -206,20 +209,29 @@ p,
     padding: 200px 0 200px 0;
 }
 
+#testimonials {
+    background: #222;
+}
 
-#forms {
+#mailus {
 
     background-color: #ddd;
     padding: 5%;
 }
 
-#footer {
-    padding: 100px;
-    background: url(image/bg1.jpg);
+#contact {
+    padding: 50px;
+    background: url(image/bg1.jpg)no-repeat center;
+    background-size: cover;
+    margin-bottom: -10px;
 }
 
 .content {
     
+}
+
+ul li:active {
+    background: #444;
 }
 
 @media only screen and (min-width: 5508px) and (max-width: 768px){

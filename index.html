@@ -72,24 +72,36 @@ $errorString = '<div class="alert alert-danger " role="alert"><p><strong>Email h
 
     </head>
 
-    <body>
+    <body data-spy="scroll" data-target="#navId" data-offset="80">
 
-        <nav class="navbar navbar-toggleable-md fixed-top navbar-inverse pt-4" style="background-color:#333">
+        <nav class="navbar navbar-toggleable-md fixed-top navbar-inverse p-1" style="background-color:#333" id="navId">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a class="navbar-brand ml-5" href="#home">Kambal works</a>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav offset-8">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#contact">Contact us <span class="sr-only">(current)</span></a>
+                <ul class="nav nav-tabs offset-" role="tablist">
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="#projects">Projects <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="#services">Services <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#services">Services <span class="sr-only">(current)</span></a>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="#about">About <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="#testimonials">Reviews <span class="sr-only">(current)</span></a>
+                        
+                    </li>
+                 <li class="nav-item ">
+                        <a class="nav-link " href="#mailus">Email us <span class="sr-only">(current)</span></a>
+                        
+                    </li>
+                <li class="nav-item ">
+                        <a class="nav-link " href="#contact">Contact us <span class="sr-only">(current)</span></a>
+                        
                     </li>
                 </ul>
 
@@ -98,14 +110,14 @@ $errorString = '<div class="alert alert-danger " role="alert"><p><strong>Email h
 
         <section id="home">
 
-            <div class="container-fluid text-center">
+            <div class="container text-center mt-5">
 
                 <div class="jumbi text-center" >
 
                     <h1 id="firstheader">Kambal Glass Aluminum  and Iron Works. </h1> 
                     <img src="/kamballogo.jpg"  id="kamballogo" alt="skull-steel">
                     <hr class="text-lead">
-                    <button class="btn btn-success btn-lg contact-btn">Contact us</button>
+                    <a href="#footer" class="btn btn-success btn-lg contact-btn">Contact us</a>
                 </div>
             </div>
         </section> <!--Front Page-->
@@ -115,7 +127,7 @@ $errorString = '<div class="alert alert-danger " role="alert"><p><strong>Email h
         <section id="projects">
             <div class="text-center mid-fixer">
                 <h2 class="secondheader">Our Projects</h2>
-                <h4 class="text-lead mid-text"> look at our previous project models gallery</h4>
+                <h4 class="text-lead mid-text"> look at our previous project models on our slides</h4>
             </div>
 
 
@@ -281,8 +293,7 @@ $errorString = '<div class="alert alert-danger " role="alert"><p><strong>Email h
                         <img class="img-thumbnail service-icon" src="image/icon-1.png" alt="hammer">
                         <p class="servicetext text-center x">Repairs</p>
                         <p class="excerpt x">
-                            We repair any kinds of stuffs involving Glass, Aluminums and Metals. See above example of what we can do.
-
+                            We repair broken Fences, repaint walls, rusty gates or your old sidecar. We will fit it for you! 
                         </p>  
                     </div>
 
@@ -290,19 +301,9 @@ $errorString = '<div class="alert alert-danger " role="alert"><p><strong>Email h
                     <div class="col-lg-4 col-md-4 col-sm-4">
                         <img class="img-thumbnail service-icon" src="image/icon-2.png" alt="hammer">
                         <p class="servicetext text-center x">Install</p>  
-                        <p class="excerpt x">Varias coniunctione ullamco legam aliquip, iis ut consectetur est ea varias 
-                            consequat adipisicing, quamquam ab dolor, fore iis hic fugiat nostrud ubi ne 
-                            culpa sempiternum et an ex sint pariatur, de esse enim a eiusmod. Irure nostrud 
-                            officia, vidisse labore anim singulis fugiat, o cillum imitarentur id ullamco 
-                            praetermissum aut commodo. Non illum quo varias ad admodum in multos, enim 
-                            voluptate possumus, fugiat occaecat ullamco. Malis fabulas si anim aute. Et 
-                            fugiat esse ex arbitror. Velit mentitum voluptatibus, ingeniis multos e admodum 
-                            firmissimum ad quo amet incididunt voluptate, pariatur varias nescius consequat 
-                            aut officia est singulis quo o varias ea noster est si appellat do admodum, ut 
-                            elit ex cillum. Nulla senserit nostrud, ubi ex culpa tamen cillum de enim 
-                            occaecat id quamquam, esse officia ab legam tamen, proident qui doctrina ita te 
-                            cillum quibusdam concursionibus, se lorem multos quid deserunt  qui ad nescius o 
-                            officia.</p> 
+                        <p class="excerpt x">
+                            We install Gates, Windows, Fences, Roof, Glass Panels and a lot more! Contact us and lets talk.
+                        </p> 
 
                     </div>
 
@@ -310,19 +311,10 @@ $errorString = '<div class="alert alert-danger " role="alert"><p><strong>Email h
                     <div class="col-lg-4 col-md-4 col-sm-4">
                         <img class="img-thumbnail service-icon" src="image/icon-3.png" alt="hammer">
                         <p class="servicetext text-center x">Build</p>     
-                        <p class="excerpt x" >Ad nam aute cernantur, mandaremus lorem sunt ex noster, o multos excepteur in 
-                            mentitum quorum vidisse, do mandaremus de ullamco ad aut qui minim eiusmod, ad 
-                            de quorum sint noster se iudicem minim quorum nam eram. Te cillum et duis, 
-                            ingeniis enim fabulas de nam te eruditionem et commodo multos probant hic 
-                            quibusdam dolor senserit admodum, ita quid aliquip instituendarum, nam se aute 
-                            sint sunt ne ad illum adipisicing. Cupidatat relinqueret ab singulis, possumus 
-                            varias in arbitror graviterque, singulis nulla quis se irure a duis ingeniis 
-                            voluptatibus, ex litteris ab nostrud, quem proident sed senserit non commodo 
-                            summis incididunt, mandaremus esse summis doctrina quid. Dolor appellat do 
-                            quamquam, de noster pariatur vidisse, pariatur amet lorem se tamen et quis 
-                            pariatur se sunt minim. Id nam quae doctrina ita in noster quibusdam offendit 
-                            sed aliqua iudicem do consequat se commodo illum duis singulis fugiat. Varias 
-                            qui non nisi nostrud. Quo minim ingeniis quamquam ab an esse o dolor.</p>
+                        <p class="excerpt x" >
+                            We can build custom made Stalls, Tricycle sidecar, 
+                            we can build house and there's a lot more! Send us a message and get a <strong>DISCOUNT!</strong>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -363,7 +355,7 @@ $errorString = '<div class="alert alert-danger " role="alert"><p><strong>Email h
 
         <!--TESTIMONIALS-->
 
-        <section id="testi">
+        <section id="testimonials">
             <div class="container">
 
                 <div class="text-center mid-fixer">
@@ -424,26 +416,27 @@ $errorString = '<div class="alert alert-danger " role="alert"><p><strong>Email h
 
         <!--FORMS-->
 
-        <section id="forms">
+        <section id="mailus">
 
             <div class="container">
-
+                <h1 class=""> Message us</h1>
+                <small class="text-lead"> or text us.  just a bit more scroll down  and you will see our mobile number</small>
                 <form action="">
                     <div class="form-group">
                         <label for="name" class="label-text">Name</label>
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" placeholder="Juan DeLa Cruz">
                     </div>
 
                     <div class="form-group">
                         <label for="name" class="label-text">Contact No.</label>
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" placeholder="+63-987-654-321">
                     </div>
 
                     <div class="form-group">
                         <label for="name" class="label-text">Message us</label>
                         <textarea type="text" class="form-control"> </textarea>
                     </div>
-
+                    <button class="btn btn-success btn-lg">submit</button>
                 </form>
 
             </div>
@@ -452,7 +445,7 @@ $errorString = '<div class="alert alert-danger " role="alert"><p><strong>Email h
 
 
         <!--FOOTER-->
-        <footer id="footer">
+        <footer id="contact">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
@@ -463,7 +456,7 @@ $errorString = '<div class="alert alert-danger " role="alert"><p><strong>Email h
                     </div>
 
                     <div class="col-lg-6 col-md-6 col-sm-6  col-xs-6  text-center">
-                        <h4>Like us in Facebook!</h4>
+                        <h4>Like us in Facebook</h4>
                         <a href="#"><i class="fa fa-facebook"></i> </a>
 
                     </div>
