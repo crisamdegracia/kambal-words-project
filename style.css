@@ -90,7 +90,7 @@ p,
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    margin: 0 -5%;
+    margin: 50px -5% 0;
     padding: 8% 0 60px 0;
     background-attachment: fixed;
 }
